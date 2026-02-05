@@ -5,7 +5,7 @@ export default function Hero() {
     <section id="accueil" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image Placeholder */}
       <div className="absolute inset-0 image-placeholder">
-        <span className="text-xl">HERO BACKGROUND IMAGE<br/>1920x1080px</span>
+        <img src="/images/heroSectionAcademy.jpg" alt="Hero Background" className="absolute inset-0 w-full h-full object-cover" />
       </div>
       
       {/* Overlay */}
@@ -20,8 +20,8 @@ export default function Hero() {
         <div className="max-w-5xl mx-auto space-y-8 animate-fade-in">
           {/* Main Heading */}
           <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-tight">
-            <span className="text-white block mb-2">DE L'IDÉE À</span>
-            <span className="text-white block mb-2">LA VISIBILITÉ</span>
+            <span className="text-white block mb-2 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">DE L'IDÉE À</span>
+            <span className="text-white block mb-2 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">LA VISIBILITÉ</span>
             <span className="text-primary text-6xl sm:text-7xl md:text-8xl lg:text-9xl italic block" style={{ fontFamily: 'cursive' }}>
               Formation
             </span>

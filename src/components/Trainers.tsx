@@ -6,28 +6,36 @@ const trainers = [
     title: "PhD en Marketing",
     role: "TRAINER",
     specialty: "Marketing Digital & Stratégie Meta",
-    image: "PhD_B_MOUAD",
+    image: "/images/2.png",
+  },
+
+  {
+    name: "E.YOUNESS",
+    title: "Filmmaker Professionnel",
+    role: "TRAINER",
+    specialty: "Production Vidéo & Lumière",
+    image: "/images/3.png",
+  },
+  {
+    name: "Q.Moahmmed",
+    title: "Filmmaker Professionnel",
+    role: "TRAINER",
+    specialty: "Production Vidéo & Lumière",
+    image: "/images/1.png",
   },
   {
     name: "S.RACHID",
     title: "PhD & Comptable agréé",
     role: "TRAINER",
     specialty: "Juridique & Fiscal",
-    image: "PhD_S_RACHID",
+    image: "/images/4.png",
   },
   {
     name: "M.AYOUB",
     title: "Expert en Montage Vidéo",
     role: "TRAINER",
     specialty: "Montage & Post-Production",
-    image: "M_AYOUB",
-  },
-  {
-    name: "E.YOUNESS",
-    title: "Filmmaker Professionnel",
-    role: "TRAINER",
-    specialty: "Production Vidéo & Lumière",
-    image: "E_YOUNESS",
+    image: "/images/5.png",
   },
 ];
 
@@ -67,9 +75,13 @@ export default function Trainers() {
               {/* Card */}
               <div className="relative bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 hover:border-primary/50 transition-all duration-500">
                 {/* Image Placeholder */}
-                <div className="image-placeholder aspect-[3/4] relative overflow-hidden">
-                  <span className="text-sm">TRAINER PHOTO<br/>{trainer.image}<br/>600x800px</span>
-                  
+                <div className="relative overflow-hidden min-h-[300px] sm:min-h-[400px]">
+                  {/* <span className="text-sm">TRAINER PHOTO<br/>{trainer.image}<br/>600x800px</span> */}
+                  <img 
+    src={trainer.image.startsWith('/public') ? trainer.image.replace('/public', '') : trainer.image}
+    alt={`${trainer.name} - ${trainer.title}`}
+    className="w-full h-full object-cover"
+  />
                   {/* Overlay Gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
                 </div>
@@ -107,28 +119,6 @@ export default function Trainers() {
           ))}
         </div>
 
-        {/* Team Photo Section */}
-        <div className="mt-20 max-w-5xl mx-auto animate-fade-in">
-          <div className="relative rounded-3xl overflow-hidden">
-            {/* Team Image Placeholder */}
-            <div className="image-placeholder aspect-[16/9]">
-              <span className="text-xl">FULL TEAM PHOTO<br/>1600x900px</span>
-            </div>
-            
-            {/* Overlay Content */}
-            <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/60 to-transparent flex items-end">
-              <div className="p-8 w-full">
-                <h3 className="font-heading text-4xl md:text-5xl text-white mb-4">
-                  Une équipe d'<span className="text-primary">experts passionnés</span>
-                </h3>
-                <p className="text-gray-300 text-lg max-w-3xl">
-                  Plus de 20 ans d'expérience combinée dans le marketing digital, la production vidéo, et la gestion d'entreprise. Nous sommes là pour partager notre expertise et vous accompagner vers le succès.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Testimonials or Video Section */}
         <div className="mt-20 max-w-6xl mx-auto animate-slide-up">
           <div className="text-center mb-12">
@@ -140,15 +130,27 @@ export default function Trainers() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Video Placeholder 1 */}
-            <div className="video-placeholder aspect-video rounded-2xl">
-              <span className="text-lg relative z-10">TESTIMONIAL VIDEO 1<br/>1280x720px</span>
+          <div className="grid md:grid-cols-2 gap-8 justify-items-center">
+            {/* YouTube Short */}
+            <div className="aspect-[9/16] w-full max-w-[360px] rounded-2xl overflow-hidden bg-white/5 border border-white/10">
+              <iframe
+                src="https://www.youtube.com/embed/nH4Lz93JIv4"
+                title="Testimonial Video 1"
+                className="w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
 
-            {/* Video Placeholder 2 */}
-            <div className="video-placeholder aspect-video rounded-2xl">
-              <span className="text-lg relative z-10">TESTIMONIAL VIDEO 2<br/>1280x720px</span>
+            {/* Regular YouTube Video */}
+            <div className="aspect-[9/16] w-full max-w-[360px] rounded-2xl overflow-hidden bg-white/5 border border-white/10">
+              <iframe
+                src="https://www.youtube.com/embed/Q1eX7xhXYls"
+                title="Testimonial Video 2"
+                className="w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
         </div>
