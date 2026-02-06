@@ -13,18 +13,21 @@ export default function About() {
           <div className="order-2 lg:order-1 animate-slide-up">
             <div className="relative">
               {/* Main Image Placeholder */}
-              <div className="image-placeholder aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-              <img
-            src="/images/team-image.png"
-            alt="Team image"
-            className="absolute inset-0 w-full h-full object-cover "
-          />
+              <div className="image-placeholder aspect-video rounded-2xl overflow-hidden shadow-2xl">
+              <iframe
+                className="absolute inset-0 w-full h-full"
+    src="https://www.youtube.com/embed/NP2YWY3popg?si=Yj6xiHCL32dYwaPT"
+    title="YouTube video player"
+    // frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowFullScreen
+  ></iframe>
               </div>
               {/* Floating Card */}
-              <div className="absolute -bottom-4 -right-4 bg-primary text-dark p-4 rounded-xl shadow-xl animate-float">
-              <p className="font-heading text-2xl">4</p>
-              <p className="text-xs font-bold">Sessions<br/>Pratiques</p>
-              </div>
+              <div className="absolute -bottom-3 -right-3 bg-primary text-dark p-2 rounded-md shadow-md animate-float">
+    <p className="font-heading text-lg">6</p>
+    <p className="text-[10px] font-bold leading-tight">Sessions<br/>Pratiques</p>
+</div>
             </div>
           </div>
 
@@ -67,8 +70,8 @@ export default function About() {
                 <p className="text-sm text-gray-400 mt-1">Pratique</p>
               </div>
               <div className="text-center">
-                <p className="font-heading text-4xl text-primary">2</p>
-                <p className="text-sm text-gray-400 mt-1">Mois</p>
+                <p className="font-heading text-4xl text-primary">4</p>
+                <p className="text-sm text-gray-400 mt-1">Semaines</p>
               </div>
               <div className="text-center">
                 <p className="font-heading text-4xl text-primary">4</p>

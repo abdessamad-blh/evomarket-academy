@@ -65,6 +65,7 @@ const sessions = [
     theme: "Construire votre image de marque & lancer votre première campagne Meta",
     icon: Icons.smartphone,
     color: "from-primary/20 to-primary/5",
+    bonus: "Séance en ligne pour Q&A et défis pratiques",
   },
   {
     seance: "séance 2",
@@ -73,7 +74,6 @@ const sessions = [
     theme: "Filmer et maîtriser la lumière pour vos vidéos promotionnelles",
     icon: Icons.camera,
     color: "from-accent/20 to-accent/5",
-    bonus: "Séance en ligne pour Q&A et défis pratiques",
   },
   {
     seance: "séance 3",
