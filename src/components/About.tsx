@@ -13,7 +13,7 @@ export default function About() {
           <div className="order-2 lg:order-1 animate-slide-up">
             <div className="relative">
               {/* Main Image Placeholder */}
-              <div className="image-placeholder aspect-video rounded-2xl overflow-hidden shadow-2xl">
+              <div className="image-placeholder aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
               <iframe
                 className="absolute inset-0 w-full h-full"
     src="https://www.youtube.com/embed/NP2YWY3popg?si=Yj6xiHCL32dYwaPT"
@@ -26,7 +26,7 @@ export default function About() {
               {/* Floating Card */}
               <div className="absolute -bottom-3 -right-3 bg-primary text-dark p-2 rounded-md shadow-md animate-float">
     <p className="font-heading text-lg">6</p>
-    <p className="text-[10px] font-bold leading-tight">Sessions<br/>Pratiques</p>
+    <p className="text-[10px] font-bold leading-tight">Séances<br/>Pratiques</p>
 </div>
             </div>
           </div>

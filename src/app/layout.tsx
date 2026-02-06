@@ -16,7 +16,25 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
-        <Script id="facebook-pixel" strategy="afterInteractive">
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=1468562368136388&ev=PageView&noscript=1"
+            alt=""
+          />
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=1478547833636994&ev=PageView&noscript=1"
+            alt=""
+          />
+        </noscript>
+      </head>
+      <body>
+        <Script id="facebook-pixel" strategy="beforeInteractive">
           {`
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -27,20 +45,12 @@ export default function RootLayout({
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '1468562368136388');
+            fbq('init', '1478547833636994');
             fbq('track', 'PageView');
           `}
         </Script>
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=1468562368136388&ev=PageView&noscript=1"
-            alt=""
-          />
-        </noscript>
-      </head>
-      <body>{children}</body>
+        {children}
+      </body>
     </html>
   );
 }

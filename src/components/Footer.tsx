@@ -131,7 +131,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary mt-1">{Icons.location}</span>
-                <span>Amip Casa, Casablanca</span>
+                <span>TechnoPark Rabat</span>
               </li>
             </ul>
           </div>
@@ -180,7 +180,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
           <p>
-            © 2025 <span className="text-primary">EvoMarket Academy</span>. Tous droits réservés.
+            © 2025 <span className="text-primary">EvoMarket Ageny</span>. Tous droits réservés.
           </p>
           <p className="text-center">
             Développé avec passion par{" "}
