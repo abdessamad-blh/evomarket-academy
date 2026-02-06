@@ -37,7 +37,7 @@ export default function Hero() {
 
           {/* Description */}
           <p className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto animate-slide-up" style={{ animationDelay: "0.4s" }}>
-            Maîtrisez la communication digitale de A à Z en seulement 4 sessions pratiques
+            Maîtrisez la communication digitale de A à Z en seulement 6 séanses pratiques
           </p>
 
           {/* CTA Buttons */}
@@ -49,7 +49,7 @@ export default function Hero() {
               Réserver maintenant
             </a>
             <a
-              href="tel:0537705911"
+              href="https://wa.me/212751788358"
               className="border-2 border-primary text-primary px-8 py-4 rounded-full font-bold text-lg hover:bg-primary hover:text-dark transition-all duration-300 hover:scale-110"
             >
               Contactez-nous
