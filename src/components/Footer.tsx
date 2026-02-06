@@ -150,7 +150,7 @@ export default function Footer() {
                 {Icons.instagram}
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/profile.php?id=61583970682233"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 bg-white/5 hover:bg-primary/20 border border-white/10 hover:border-primary rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 text-gray-400 hover:text-primary"
